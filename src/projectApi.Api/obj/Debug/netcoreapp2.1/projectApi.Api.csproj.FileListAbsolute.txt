@@ -1,0 +1,3 @@
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Api\obj\Debug\netcoreapp2.1\projectApi.Api.csproj.CoreCompileInputs.cache
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Api\obj\Debug\netcoreapp2.1\projectApi.Api.AssemblyInfoInputs.cache
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Api\obj\Debug\netcoreapp2.1\projectApi.Api.AssemblyInfo.cs

@@ -1,0 +1,9 @@
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\bin\Debug\netstandard2.0\projectApi.Common.deps.json
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\bin\Debug\netstandard2.0\projectApi.Common.dll
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\bin\Debug\netstandard2.0\projectApi.Common.pdb
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\obj\Debug\netstandard2.0\projectApi.Common.csprojAssemblyReference.cache
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\obj\Debug\netstandard2.0\projectApi.Common.csproj.CoreCompileInputs.cache
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\obj\Debug\netstandard2.0\projectApi.Common.AssemblyInfoInputs.cache
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\obj\Debug\netstandard2.0\projectApi.Common.AssemblyInfo.cs
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\obj\Debug\netstandard2.0\projectApi.Common.dll
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Common\obj\Debug\netstandard2.0\projectApi.Common.pdb
