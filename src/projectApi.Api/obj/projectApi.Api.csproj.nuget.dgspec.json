@@ -31,7 +31,14 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Common\\projectApi.Common.csproj": {
+                "projectPath": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Common\\projectApi.Common.csproj"
+              },
+              "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Service\\projectApi.Service.csproj": {
+                "projectPath": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Service\\projectApi.Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -62,6 +69,130 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.7.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Common\\projectApi.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Common\\projectApi.Common.csproj",
+        "projectName": "projectApi.Common",
+        "projectPath": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Common\\projectApi.Common.csproj",
+        "packagesPath": "C:\\Users\\Britt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Britt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.3.103.35, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Service\\projectApi.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Service\\projectApi.Service.csproj",
+        "projectName": "projectApi.Service",
+        "projectPath": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Service\\projectApi.Service.csproj",
+        "packagesPath": "C:\\Users\\Britt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Britt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Common\\projectApi.Common.csproj": {
+                "projectPath": "C:\\Users\\Britt\\source\\repos\\projectApi\\src\\projectApi.Common\\projectApi.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.3.103.35, )"
+            },
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.3.101.62, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
             }
           },
           "imports": [

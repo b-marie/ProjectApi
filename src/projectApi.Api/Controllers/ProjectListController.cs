@@ -3,43 +3,75 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using projectApi.Common.Models;
+using projectApi.Service.Services;
 
 namespace projectApi.Api.Controllers
 {
-    [Route("api/projectlist")]
+    [Route("projectlist")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ProjectListController : ControllerBase
     {
-        // GET api/projectlist
+        ProjectListService _projectListService;
+        public ProjectListController(ProjectListService projectListService)
+        {
+            _projectListService = projectListService;
+        }
+
+        // GET projectlist
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<List<Project>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return await _projectListService.GetAllProjectsAsync();
         }
 
-        // GET api/values/5
+        // GET projectlist/guid
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public async Task<Project> Get(Guid id)
         {
-            return "value";
+            return await _projectListService.GetProjectByIdAsync(id);
         }
 
-        // POST api/values
+        // POST projectlist
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async void Post([FromBody] Project project)
         {
+            await _projectListService.CreateNewProject(project);
         }
 
-        // PUT api/values/5
+        // PUT projectlist/guid
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async void Put([FromRoute]Guid id, [FromBody] Project project)
         {
+            await _projectListService.UpdateProjectDetailsAsync(id, project.Title, project.Description, project.ProjectLink, project.GitHubLink);
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        //PUT projectlist/guid/upvote
+        [HttpPut("{id}/upvote")]
+        public async void Upvote(Guid id)
         {
+            await _projectListService.UpvoteProjectAsyncById(id);
+        }
+
+        //PUT projectlist/guid/downvote
+        [HttpPut("{id}/downvote")]
+        public async void Downvote(Guid id)
+        {
+            await _projectListService.DownvoteProjectAsyncById(id);
+        }
+
+        //PUT projectlist/guid/complete
+        [HttpPut("{id}/complete")]
+        public async void Complete(Guid id)
+        {
+            await _projectListService.CompleteProjectAsyncById(id);
+        }
+
+        // DELETE projectlist/guid/delete
+        [HttpPut("{id}/delete")]
+        public async void Delete(Guid id)
+        {
+            await _projectListService.DeleteProjectAsyncById(id);
         }
     }
 }

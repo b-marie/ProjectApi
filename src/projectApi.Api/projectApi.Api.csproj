@@ -16,4 +16,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\projectApi.Common\projectApi.Common.csproj" />
+    <ProjectReference Include="..\projectApi.Service\projectApi.Service.csproj" />
+  </ItemGroup>
+
 </Project>

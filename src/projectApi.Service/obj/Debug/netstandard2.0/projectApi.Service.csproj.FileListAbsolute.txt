@@ -1,0 +1,12 @@
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\bin\Debug\netstandard2.0\projectApi.Service.deps.json
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\bin\Debug\netstandard2.0\projectApi.Service.dll
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\obj\Debug\netstandard2.0\projectApi.Service.csprojAssemblyReference.cache
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\obj\Debug\netstandard2.0\projectApi.Service.csproj.CoreCompileInputs.cache
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\obj\Debug\netstandard2.0\projectApi.Service.AssemblyInfoInputs.cache
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\obj\Debug\netstandard2.0\projectApi.Service.AssemblyInfo.cs
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\bin\Debug\netstandard2.0\projectApi.Service.pdb
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\bin\Debug\netstandard2.0\projectApi.Common.dll
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\bin\Debug\netstandard2.0\projectApi.Common.pdb
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\obj\Debug\netstandard2.0\projectApi.Service.csproj.CopyComplete
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\obj\Debug\netstandard2.0\projectApi.Service.dll
+C:\Users\Britt\source\repos\projectApi\src\projectApi.Service\obj\Debug\netstandard2.0\projectApi.Service.pdb
