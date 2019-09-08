@@ -12,7 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{48873346-C867-4750-983E-ABE79929C802}"
 	ProjectSection(SolutionItems) = preProject
 		buildspec.yml = buildspec.yml
-		src\projectApi.Api\Dockerfile = src\projectApi.Api\Dockerfile
+		Dockerfile = Dockerfile
+		Dockerrun.aws.json = Dockerrun.aws.json
 		README.md = README.md
 	EndProjectSection
 EndProject
