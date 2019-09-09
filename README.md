@@ -4,13 +4,15 @@ The purpose of this project is to create a backend API for various front-end pro
 
 ### Updating this API Project
 
-This project is deployed as a docker image to an elastic beanstalk environment. As AWS CodeBuild doesn't currently support building windows-based docker images (boo), this step has to be conducted manually. Ignore the buildspec.yml contained in this project. It's a lie.
+This project is deployed as a docker image to Heroku, using [this StackOverflow link](https://stackoverflow.com/questions/54987383/docker-pushing-to-heroku-unexpected-http-status-500-internal-server-error) as a reference.
 
-1. Build the docker image locally using the following command: `docker build -t projectapi .`
-2. Optional, but probably a good idea, run the docker image locally to test the application: `docker run -p 8080:80 projectapi sh`. Navigate to localhost:8080 to test.
-3. Tag the image with the ECR image name: `docker tag projectapi ECRIMAGENAME`, replacing the ECRIMAGENAME with the name of the image in ECR.
-4. Get an ECR login to push the image to ECR: `aws ecr get-login --region REGION --no-include-email`, replacing REGION with the region your ECR image is located in (ex. us-east-1).
-5. Copy the output docker login and paste that into the CLI
-6. Push the image to ECR using `docker push ECRIMAGENAME`, yet again replacing that image name with your image name.
-7. Upload the dockerrun.aws.json to Elastic Beanstalk.
-8. Build a script to do this all in one command (that's a lotta room for error).
+1. Ensure that your desktop version of docker is setup for building Linux images.
+2. Run `dotnet publish -c Release`
+3. Copy the Dockerfile to the release/netcoreapp2.1/publish folder.
+4. Run `docker build -t projectapibuild ./src/projectApi.Api/bin/Release/netcoreapp2.1/publish` to build the docker image.
+5. Run `docker tag projectapibuild:latest registry.heroku.com/brittany-ellich-project-api/web` to tag the image.
+6. While logged into the Heroku CLI, run heroku container:push web -a APPNAME` replacing APPNAME with the name of your Heroku app.
+7. Run `heroku container:release web --app APPNAME` replacing APPNAME with the name of your Heroku App.
+8. Put together a script to do this all together.
+
+To troubleshoot Heroku docker images, run `heroku logs --tail --app APPNAME` replacing APPNAME with the name of your Heroku app.

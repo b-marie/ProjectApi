@@ -45,7 +45,7 @@ namespace projectApi.Api
             {
                 app.UseHsts();
             }
-            //app.UseMiddleware<ApiKeyMiddleware>();
+            app.UseMiddleware<ApiKeyMiddleware>();
             app.UseHttpsRedirection();
             app.UseMvc();
         }
