@@ -29,6 +29,10 @@ namespace projectApi.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
             services.AddSingleton<AWSCredentialsService>();
             services.AddSingleton<DynamoDBService>();
             services.AddTransient<ProjectListService>();
@@ -45,6 +49,7 @@ namespace projectApi.Api
             {
                 app.UseHsts();
             }
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseMiddleware<ApiKeyMiddleware>();
             app.UseHttpsRedirection();
             app.UseMvc();

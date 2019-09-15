@@ -1,0 +1,15 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "302364346436.dkr.ecr.us-west-2.amazonaws.com/projectapi:latest",
+    "Update": true
+  },
+  "Ports": [
+    {
+      "ContainerPort": 80,
+      "HostPort": 443
+    }
+  ],
+  "Volumes": [],
+  "Entrypoint": "projectApi.Api.dll"
+}

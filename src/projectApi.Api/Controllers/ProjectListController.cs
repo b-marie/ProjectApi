@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using projectApi.Common.Models;
 using projectApi.Service.Services;
@@ -9,6 +10,7 @@ using projectApi.Service.Services;
 namespace projectApi.Api.Controllers
 {
     [Route("projectlist")]
+    [EnableCors("AllowOrigin")]
     [ApiController]
     public class ProjectListController : ControllerBase
     {

@@ -1,0 +1,96 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "1f40a754dc15ad214f210e9b1f9d014727742f79"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "projectApi.Service/1.0.0": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.103.35",
+          "AWSSDK.DynamoDBv2": "3.3.101.62",
+          "NETStandard.Library": "2.0.3",
+          "projectApi.Common": "1.0.0"
+        },
+        "runtime": {
+          "projectApi.Service.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.103.35": {
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.103.35"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.101.62": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.103.35"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.101.62"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "projectApi.Common/1.0.0": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.103.35"
+        },
+        "runtime": {
+          "projectApi.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "projectApi.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AWSSDK.Core/3.3.103.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r7QCMMPwolRiSNPrJlPvC8B8ObTGTMY1Mkv3/X5sLcbrpW6dmWAf+eGZmlOChcZBFmQ4WemraMZ/20ng6f9IuQ==",
+      "path": "awssdk.core/3.3.103.35",
+      "hashPath": "awssdk.core.3.3.103.35.nupkg.sha512"
+    },
+    "AWSSDK.DynamoDBv2/3.3.101.62": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ChBBZdEK6WhREeHr7mp7wXJxLFvoTm5yYntBSehmrsUUQpMADU/XEieosmZluk+wVwWMp0aFKSTk1D+pYyi55A==",
+      "path": "awssdk.dynamodbv2/3.3.101.62",
+      "hashPath": "awssdk.dynamodbv2.3.3.101.62.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nlow+quR8kfJiIW+U2TABzNib6hMQ7S9ljot3s2v8+ofcHAC1gNS+8EbRRfWhp7vNTqHlCjpyL1g5ZLyEKJbcg==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "projectApi.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
